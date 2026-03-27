@@ -3,11 +3,11 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 /* components */
-import Cards from "../components/Cards";
-import Footer from "../components/Footer";
-import Logo from "../components/Logo";
-import InputForm from "../components/FormInput";
-import HomeNav from "../components/HomeNav";
+import Cards from "../components/cards";
+import Footer from "../components/footer";
+import Logo from "../components/logo";
+import InputForm from "../components/formInput";
+import HomeNav from "../components/fomeNav";
 
 /* images */
 import HeaderImg from "../assets/headerImg.png";

@@ -1,7 +1,7 @@
-import Footer from "../components/Footer";
-import InputForm from "../components/FormInput";
-import Logo from "../components/Logo";
-import Gradient from "../components/Gradient";
+import Footer from "../components/footer";
+import InputForm from "../components/formInput";
+import Logo from "../components/logo";
+import Gradient from "../components/fradient";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
