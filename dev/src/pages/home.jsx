@@ -7,10 +7,10 @@ import Cards from "../components/cards";
 import Footer from "../components/footer";
 import Logo from "../components/logo";
 import InputForm from "../components/formInput";
-import HomeNav from "../components/fomeNav";
+import HomeNav from "../components/homeNav";
 
 /* images */
-import HeaderImg from "../assets/headerimg.png";
+import HeaderImg from "../assets/headerimg.webp";
 import hero from "../assets/hero.png";
 
 export default function Home() {
