@@ -1,8 +1,8 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import Home from "./pages/home";
-import MealInfo from "./pages/mealInfo";
+import Home from "./pages/Home";
+import MealInfo from "./pages/MealInfo";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 createRoot(document.getElementById("root")).render(
@@ -13,5 +13,5 @@ createRoot(document.getElementById("root")).render(
         <Route path="/meal/:mealID" element={<MealInfo />} />
       </Routes>
     </BrowserRouter>
-  </>
+  </>,
 );

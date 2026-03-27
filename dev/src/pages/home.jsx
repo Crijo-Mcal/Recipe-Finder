@@ -3,11 +3,11 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 /* components */
-import Cards from "../components/cards";
-import Footer from "../components/footer";
-import Logo from "../components/logo";
-import InputForm from "../components/formInput";
-import HomeNav from "../components/homeNav";
+import Cards from "../components/Cards";
+import Footer from "../components/Footer";
+import Logo from "../components/Logo";
+import InputForm from "../components/FormInput";
+import HomeNav from "../components/HomeNav";
 
 /* images */
 import HeaderImg from "../assets/headerImg.png";
@@ -24,7 +24,7 @@ export default function Home() {
     async function fetchCardData() {
       try {
         const response = await fetch(
-          `https://www.themealdb.com/api/json/v1/1/filter.php?c=${selectValue}`
+          `https://www.themealdb.com/api/json/v1/1/filter.php?c=${selectValue}`,
         );
         const data = await response.json();
         setCardsData(data.meals);

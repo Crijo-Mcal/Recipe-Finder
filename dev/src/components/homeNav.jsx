@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import InputForm from "./formInput";
-import Logo from "./logo";
-import FormSelect from "./formSelect.jsx";
+import InputForm from "./FormInput.jsx";
+import Logo from "./Logo.jsx";
+import FormSelect from "./FormSelect.jsx";
 
 export default function homeNav({ setSelectValue }) {
   const [active, setAtive] = useState(false);
