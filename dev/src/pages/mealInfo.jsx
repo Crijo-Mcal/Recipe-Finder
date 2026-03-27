@@ -80,11 +80,14 @@ export default function MealInfo() {
               <h2 className="text-2xl sm:text-3xl font-semibold mb-4">
                 Instructions
               </h2>
-              <div className="space-y-4 text-base sm:text-lg leading-relaxed m-5">
-                {meal.strInstructions.split(/\r?\n/).map((element, index) => (
-                  <li key={index}>{element}</li>
-                ))}
-              </div>
+              <ul className="list-decimal space-y-4 text-base sm:text-lg leading-relaxed m-5">
+                {meal.strInstructions
+                  .split(/\r?\n/)
+                  .filter((element) => element != "")
+                  .map((element, index) => (
+                    <li key={index}>{element}</li>
+                  ))}
+              </ul>
             </section>
           </main>
         </div>
