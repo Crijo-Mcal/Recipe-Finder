@@ -10,7 +10,7 @@ import InputForm from "../components/formInput";
 import HomeNav from "../components/fomeNav";
 
 /* images */
-import HeaderImg from "../assets/headerImg.png";
+import HeaderImg from "../assets/headerimg.png";
 import hero from "../assets/hero.png";
 
 export default function Home() {
