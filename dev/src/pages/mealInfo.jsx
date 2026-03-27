@@ -1,6 +1,7 @@
 import Footer from "../components/footer";
 import InputForm from "../components/formInput";
 import Logo from "../components/logo";
+import Gradient from "../components/gradient";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
@@ -23,29 +24,6 @@ export default function MealInfo() {
 
     fetchMeal();
   }, [mealID]);
-
-  function formatInstructions(text) {
-    if (!text) return [];
-
-    const lines = text
-      .split(/\r?\n/)
-      .map((l) => l.trim())
-      .filter((l) => l !== "");
-
-    const steps = [];
-
-    for (let i = 0; i < lines.length; i++) {
-      if (lines[i].toLowerCase().startsWith("step")) {
-        const title = lines[i];
-        const content = lines[i + 1] || "";
-
-        steps.push(`${title} ${content}`);
-        i++; // skip next karena sudah dipakai
-      }
-    }
-
-    return steps;
-  }
 
   return (
     <>
@@ -102,9 +80,9 @@ export default function MealInfo() {
               <h2 className="text-2xl sm:text-3xl font-semibold mb-4">
                 Instructions
               </h2>
-              <div className="space-y-4 text-base sm:text-lg leading-relaxed">
-                {formatInstructions(meal.strInstructions).map((step, i) => (
-                  <p key={i}>{step}</p>
+              <div className="space-y-4 text-base sm:text-lg leading-relaxed m-5">
+                {meal.strInstructions.split(/\r?\n/).map((element, index) => (
+                  <li key={index}>{element}</li>
                 ))}
               </div>
             </section>
